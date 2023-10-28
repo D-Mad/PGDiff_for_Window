@@ -63,11 +63,13 @@
 
 ## :diamonds: Installation
 
+Method 1 (Anaconda for Win and Linux(Ubuntu)):
+
 ### Codes and Environment
 
 ```
 # git clone this repository
-git clone https://github.com/pq-yang/PGDiff.git
+git clone https://github.com/D-Mad/PGDiff_for_Window.git
 cd PGDiff
 
 # create new anaconda env
@@ -77,8 +79,38 @@ conda activate pgdiff
 # install python dependencies
 conda install mpi4py
 pip3 install -r requirements.txt
+pip install blobfile==1.0.6
 pip install -e .
+pip install torch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 --index-url https://download.pytorch.org/whl/cu118
 ```
+Method 2 for Window:
+
+```
+#install MPI MS 
+Link : https://www.microsoft.com/en-us/download/details.aspx?id=57467
+
+#install python3.8
+Link : https://www.python.org/ftp/python/3.8.0/python-3.8.0-amd64.exe
+
+# git clone this repository
+git clone https://github.com/D-Mad/PGDiff_for_Window.git
+cd PGDiff
+
+# create new  env
+in CMD :  "C:\python38\python.exe" -m venv venv
+"C:\python38\python.exe" : is the python 3.8 path you just installed
+activate env in CMD : .\venv\Scripts\activate.bat
+
+pip install gdown
+pip install blobfile==1.0.6
+pip install mpi4py
+pip install -r requirements.txt
+pip install -e .
+
+pip install torch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 --index-url https://download.pytorch.org/whl/cu118
+
+```
+
 
 ### Pretrained Model
 Download the pretrained face diffusion model from [[Google Drive](https://drive.google.com/file/d/1kfpLl4JsGxa_8GQXhzt8t38f5tR62uXW/view?usp=sharing) | [BaiduPan (pw: pgdf)](https://pan.baidu.com/s/1VHv48RDUXI8onMEodVFZkw)] to the `models` folder (credit to [DifFace](https://github.com/zsyOAOA/DifFace)).
