@@ -1,6 +1,6 @@
 @echo off
 
-cd PGDiff
+
 call .\venv\Scripts\activate.bat
 
 set CUDA_VISIBLE_DEVICES=0
