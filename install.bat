@@ -1,11 +1,5 @@
 @echo off
 
-
-git clone https://github.com/D-Mad/PGDiff_for_Window.git
-cd PGDiff
-
-
-
 echo PGDIFF venv
 IF NOT EXIST venv (
     "C:\python38\python.exe" -m venv venv
