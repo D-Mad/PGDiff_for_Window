@@ -1,6 +1,6 @@
 @echo off
 
-@echo off
+
 git clone https://github.com/D-Mad/PGDiff_for_Window.git
 cd PGDiff
 
