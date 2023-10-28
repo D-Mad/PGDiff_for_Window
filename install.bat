@@ -1,7 +1,7 @@
 @echo off
 
 @echo off
-git clone https://github.com/pq-yang/PGDiff
+git clone https://github.com/D-Mad/PGDiff_for_Window.git
 cd PGDiff
 
 
@@ -28,16 +28,16 @@ echo downloading models
 set "storageFolder=models"
 set "storageFolderSub=models/restorer"
 
-REM Tạo thư mục lưu trữ (nếu chưa tồn tại)
+Create an archive folder (if it doesn't exist yet)
 mkdir "%storageFolder%"
 mkdir "%storageFolderSub%"
 
-REM Chạy mã Python để tải xuống tệp và di chuyển nó vào thư mục lưu trữ
+Run the Python code to download the file and move it to the archive directory
 python -c "import gdown; import os; url = 'https://drive.google.com/uc?id=1kfpLl4JsGxa_8GQXhzt8t38f5tR62uXW'; output = 'iddpm_ffhq512_ema500000.pth'; gdown.download(url, output, quiet=False); os.rename(output, os.path.join('%storageFolder%', output))"
 python -c "import gdown; import os; url = 'https://drive.google.com/uc?id=13qG5ScClpmmMNndhsYeWqZx58p1h01EO'; output = 'rrdb_iter_100000.pth'; gdown.download(url, output, quiet=False); os.rename(output, os.path.join('%storageFolderSub%', output))"
 python -c "import gdown; import os; url = 'https://drive.google.com/uc?id=1YWDPhqxNAtPb7t3ZJhbZ4a_sE8SqVhwX'; output = 'ms1mv3_arcface_r50_fp16.pth'; gdown.download(url, output, quiet=False); os.rename(output, os.path.join('%storageFolderSub%', output))"
 
-REM Display "done" message and prompt the user to press any key
+Display "done" message and prompt the user to press any key
 echo Done! Press any key to close the Command Prompt window.
 pause > nul
 
