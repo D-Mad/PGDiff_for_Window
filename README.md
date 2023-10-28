@@ -62,7 +62,7 @@
 
 Method 1 (Anaconda for Win and Linux(Ubuntu)):
 
-### Codes and Environment
+
 
 ```
 # git clone this repository
