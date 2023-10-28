@@ -60,6 +60,8 @@
 
 ## :diamonds: Installation
 
+
+
 Method 1 (Anaconda for Win and Linux(Ubuntu)):
 
 
@@ -83,9 +85,9 @@ pip install torch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 --index-url https
 Method 2 for Window:
 
 ```
+
 #install MPI MS 
 Link : https://www.microsoft.com/en-us/download/details.aspx?id=57467
-
 #install python3.8
 Link : https://www.python.org/ftp/python/3.8.0/python-3.8.0-amd64.exe
 
@@ -105,7 +107,7 @@ pip install -r requirements.txt
 pip install -e .
 
 pip install torch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 --index-url https://download.pytorch.org/whl/cu118
-
+Final : run run.bat to activate env
 ```
 
 
