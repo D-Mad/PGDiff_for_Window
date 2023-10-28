@@ -57,9 +57,6 @@
 
 </div>
 
-## :postbox: Updates
-- 2023.10.10: Release our codes and models. Have fun! :yum:
-- 2023.08.16: This repo is created.
 
 ## :diamonds: Installation
 
